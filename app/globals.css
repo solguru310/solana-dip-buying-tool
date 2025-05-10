@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Chrome, Safari, Edge, Opera */
+.remove-arrow::-webkit-inner-spin-button,
+.remove-arrow::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.remove-arrow[type=number] {
+  -moz-appearance: textfield;
+}
+
+.bg-opacity-50 {
+  background-color: rgba(128, 128, 128, 0.5);
+  border-radius: 20px;
+}
+
+/* Style the scrollbar track (background) */
+::-webkit-scrollbar-track {
+  background-color: var(--color-gray-600);
+}
+
+/* Style the scrollbar itself */
+::-webkit-scrollbar {
+  width: 6px; /* Adjust the width as needed */
+}
+
+/* Style the scrollbar thumb (the part that moves) */
+::-webkit-scrollbar-thumb {
+  background-color: darkgray; /* Keep this different for visibility */
+  border-radius: 20px; /* Optional rounded corners */
+}
+
+
+.bouncing-text {
+  display: flex;
+  font-size: 48px;
+  font-weight: bold;
+  color: var(--color-gray-300);
+  -webkit-box-reflect: below 3px linear-gradient(transparent, #211e1e2e);
+}
+
+.bouncing-text div {
+  animation: bouncing-text-bounce 1s infinite;
+}
+
+.bouncing-text div:nth-of-type(1) {
+  animation-delay: 0.1s;
+}
+
+.bouncing-text div:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+
+.bouncing-text div:nth-of-type(3) {
+  animation-delay: 0.3s;
+}
+
+.bouncing-text div:nth-of-type(4) {
+  animation-delay: 1.3s;
+}
+
+.bouncing-text div:nth-of-type(5) {
+  animation-delay: 0.5s;
+}
+
+.bouncing-text div:nth-of-type(6) {
+  animation-delay: 0.6s;
+}
+
+.bouncing-text div:nth-of-type(7) {
+  animation-delay: 0.7s;
+}
+
+.bouncing-text div:nth-of-type(8) {
+  animation-delay: 0.8s;
+}
+
+.bouncing-text div:nth-of-type(9) {
+  animation-delay: 0.9s;
+}
+
+@keyframes bouncing-text-bounce {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-3px);
+  }
+}
