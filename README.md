@@ -21,7 +21,7 @@ An automated trading bot designed for opportunistic dip-buying of memecoins on t
 ### 1. Clone the repository:
 
 ```bash
-git clone https://github.com/solguru310/solana-dip-buyer.git
+git clone https://github.com/solguru310/solana-dip-buying-tool.git
 Install dependencies:
 ```
 
